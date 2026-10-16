@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "${id}",
+	"version": "${version}",
+	"name": "${name}",
+	"description": "Renders the world from a configurable pivot point with transformable view rotation",
+	"authors": ["sean"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.pivotcam.PivotCamClient"]
+	},
+	"mixins": [
+		{
+			"config": "pivot-cam.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${loader}",
+		"minecraft": "${minecraft}",
+		"java": ">=${java}",
+		"fabric-api": "*"
+	}
+}
